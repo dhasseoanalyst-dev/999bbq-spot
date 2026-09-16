@@ -801,6 +801,7 @@ section{ padding: 90px 0; position: relative; }
 @media (max-width: 520px){
   .menu__grid{ grid-template-columns: 1fr; }
   .why__grid{ grid-template-columns: 1fr; }
+  .hero__bullets{ display:none; }
   .hero__ctas{ flex-direction: column; align-items:stretch; }
   .hero__ctas .btn{ justify-content:center; }
   .footer__inner{ flex-direction: column; text-align:center; }
