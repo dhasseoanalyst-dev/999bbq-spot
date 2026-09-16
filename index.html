@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>999BBQ Spot | India's BBQ-on-Wheels — Coimbatore</title>
+<meta name="description" content="999BBQ Spot brings street-style, wood-smoked BBQ straight to your neighborhood in Coimbatore. Order on WhatsApp or book our mobile BBQ taxi for parties, events & catering.">
+<meta name="theme-color" content="#120c09">
+
+<!-- Open Graph -->
+<meta property="og:title" content="999BBQ Spot | Ride into Flavor">
+<meta property="og:description" content="Coimbatore's freshest BBQ-on-wheels. Street-style smoked BBQ delivered to your street, your party, your event.">
+<meta property="og:image" content="assets/img/999bbq-logo.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/jpeg" href="assets/img/999bbq-logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css?v=5">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarbecueRestaurant",
+  "name": "999BBQ Spot",
+  "image": "assets/img/999bbq-logo.jpg",
+  "servesCuisine": "Barbecue",
+  "priceRange": "₹₹",
+  "telephone": "+918124000050",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sathy Rd, near Amman Kovil, Poompogar Nagar, Vinayagapuram",
+    "addressLocality": "Coimbatore",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "641035",
+    "addressCountry": "IN"
+  },
+  "url": "https://999bbqshop.example.com"
+}
+</script>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="nav__brand">
+      <img src="assets/img/999bbq-logo.jpg" alt="999BBQ Spot logo" class="nav__logo">
+      <span>999<em>BBQ</em> Spot</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#menu" class="nav__link">Menu</a>
+      <a href="#why" class="nav__link">Why Us</a>
+      <a href="#events" class="nav__link">Events</a>
+      <a href="#location" class="nav__link">Location</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a href="https://wa.me/918124000050?text=Hi%20999BBQ%20Spot!%20I%27d%20like%20to%20know%20today%27s%20location%20%26%20menu." class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="icon" width="24" height="24"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero__smoke">
+    <span class="puff p1"></span>
+    <span class="puff p2"></span>
+    <span class="puff p3"></span>
+    <span class="puff p4"></span>
+    <span class="puff p5"></span>
+  </div>
+  <div class="hero__embers" id="embers"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__text reveal">
+      <span class="tag"><svg class="tag__ico" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 12c2-2.96 0-7-1-8c0 3.038-1.773 4.741-3 6c-1.226 1.26-2 3.24-2 5a6 6 0 1 0 12 0c0-1.532-1.056-3.94-2-5c-1.786 3-2.791 3-4 2z"/></svg> India's BBQ-on-Wheels · Now in Coimbatore</span>
+      <h1 class="hero__title">Welcome to <span class="neon">999BBQ</span> Spot</h1>
+      <p class="hero__sub">Ride into flavor with Coimbatore's freshest BBQ-on-wheels experience. We bring succulent, smoky, street-style barbecue straight to your neighborhood — no restaurant lines, just bold taste delivered.</p>
+
+      <ul class="hero__bullets">
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 12c2-2.96 0-7-1-8c0 3.038-1.773 4.741-3 6c-1.226 1.26-2 3.24-2 5a6 6 0 1 0 12 0c0-1.532-1.056-3.94-2-5c-1.786 3-2.791 3-4 2z"/></svg></span> Street-style smoked BBQ, made fresh daily</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M2 15h11V6H4a2 2 0 0 0-2 2v7Z"/><path d="M13 9h3.5l3.5 3.5V15h-7V9Z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg></span> Mobile BBQ taxi, serving your area</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M15.5 3.5c-2-1-4.6-.6-6.1.9-1.8 1.8-2 4.6-1.7 6.1-1.6 1.1-3.9 3.1-4.9 5.1-.8 1.6.9 3.3 2.5 2.5 2-1 4-3.3 5.1-4.9 1.5.3 4.3.1 6.1-1.7 1.5-1.5 1.9-4.1.9-6.1a3.6 3.6 0 0 0-1.9-1.9Z"/><circle cx="5.2" cy="18.8" r="1.4"/></svg></span> Premium meats, house-rubbed &amp; slow-smoked</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M4 20 14 10"/><path d="M14 4l1.5 1.5"/><path d="M18 8l1.5 1.5"/><path d="M16 3l.7 2.3L19 6l-2.3.7L16 9l-.7-2.3L13 6l2.3-.7Z"/><circle cx="6" cy="17" r="1" fill="currentColor" stroke="none"/><circle cx="9" cy="20" r="1" fill="currentColor" stroke="none"/><circle cx="3" cy="14" r="1" fill="currentColor" stroke="none"/></svg></span> Perfect for dine-ins, events, parties &amp; catering</li>
+      </ul>
+
+      <div class="hero__ctas">
+        <a href="https://wa.me/918124000050?text=Hi%20999BBQ%20Spot!%20I%27d%20like%20to%20order%20%2F%20book%20the%20BBQ%20taxi." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="icon" width="24" height="24"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+          Order on WhatsApp
+        </a>
+        <a href="tel:+918124000050" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" class="icon" width="24" height="24"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+          Call 8124 000 050
+        </a>
+      </div>
+      <p class="hero__note"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg> Serving Coimbatore &amp; nearby areas — ping us for today's spot</p>
+    </div>
+
+    <div class="hero__art reveal">
+      <div class="art__glow"></div>
+      <div class="medallion">
+        <span class="medallion__ring"></span>
+        <img src="assets/img/999bbq-logo.jpg" alt="999BBQ Spot — smoked BBQ on wheels" class="hero__img">
+      </div>
+    </div>
+  </div>
+
+  <!-- driving car + smoke trail divider -->
+  <div class="roadstrip" aria-hidden="true">
+    <div class="road"></div>
+    <div class="driver">
+      <span class="trail t1"></span>
+      <span class="trail t2"></span>
+      <span class="trail t3"></span>
+      <svg viewBox="0 0 64 34" class="carsvg" width="64" height="34">
+        <rect x="2" y="16" width="60" height="12" rx="3" fill="var(--gold)"/>
+        <path d="M10 16 L18 6 H44 L52 16 Z" fill="var(--gold)"/>
+        <path d="M20 15 L25 8 H41 L46 15 Z" fill="#1c130e"/>
+        <circle cx="16" cy="29" r="5" fill="#12100f" stroke="var(--gold-light)" stroke-width="1.5"/>
+        <circle cx="48" cy="29" r="5" fill="#12100f" stroke="var(--gold-light)" stroke-width="1.5"/>
+        <rect x="26" y="10" width="14" height="7" fill="#ff7a2f" opacity="0.85"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container about__inner">
+    <div class="about__media reveal">
+      <div class="frame">
+        <img src="assets/img/999bbq-logo.jpg" alt="999BBQ Spot mobile grill" loading="lazy">
+        <span class="frame__vignette"></span>
+      </div>
+    </div>
+    <div class="about__text reveal">
+      <span class="eyebrow">About Us</span>
+      <h2 class="section-title">Great BBQ Doesn't Need Four Walls</h2>
+      <p>At <strong>999BBQ Spot</strong>, we believe great food doesn't always need a brick-and-mortar address. We hit the streets with one vision: bring authentic, wood-smoked BBQ straight to you. Our mobile "BBQ taxi" is a unique fusion of flavor, mobility and convenience — a running kitchen that turns any street corner into a smokehouse.</p>
+
+      <ul class="check-list">
+        <li>High-quality meats, fresh produce &amp; artisan spices — sourced with care</li>
+        <li>Slow-smoked over charcoal &amp; wood for that deep, signature smoky aroma</li>
+        <li>Classic BBQ fused with local Coimbatore flavor — house marinades, sauces &amp; sides</li>
+        <li>Built on a passion for food, hospitality &amp; memorable experiences</li>
+      </ul>
+
+      <p class="about__closing">Whether you're grabbing a bite on the go or booking us for your next event — we're here to fuel your BBQ cravings.</p>
+
+      <a href="#how" class="btn btn--flame">Book the BBQ Taxi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU TEASER ===== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">On The Grill</span>
+      <h2 class="section-title">What's Smoking Today</h2>
+      <p class="section-sub">Street-style BBQ classics, slow-smoked fresh every single day. Our line-up shifts with what's freshest — message us for today's full spread.</p>
+    </div>
+
+    <div class="menu__grid">
+      <div class="menu__card reveal">
+        <span class="menu__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="24" height="24"><path d="M2 12h20"/><circle cx="7" cy="12" r="2.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none"/><circle cx="17" cy="12" r="2.6" fill="currentColor" stroke="none"/></svg></span>
+        <h3>Smoked Starters</h3>
+        <p>Juicy kebabs &amp; wings, charred to smoky perfection.</p>
+      </div>
+      <div class="menu__card reveal">
+        <span class="menu__icon"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M15.5 3.5c-2-1-4.6-.6-6.1.9-1.8 1.8-2 4.6-1.7 6.1-1.6 1.1-3.9 3.1-4.9 5.1-.8 1.6.9 3.3 2.5 2.5 2-1 4-3.3 5.1-4.9 1.5.3 4.3.1 6.1-1.7 1.5-1.5 1.9-4.1.9-6.1a3.6 3.6 0 0 0-1.9-1.9Z"/><circle cx="5.2" cy="18.8" r="1.4"/></svg></span>
+        <h3>Signature Mains</h3>
+        <p>House specialties straight off the mobile grill.</p>
+      </div>
+      <div class="menu__card reveal">
+        <span class="menu__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M8 11c0-2 1-3 1-5M12 11c0-2.5 1.2-3.5 1-6M16 11c0-1.7 1-2.5 1-4"/></svg></span>
+        <h3>Sides &amp; Sauces</h3>
+        <p>House-made dips, slaws &amp; smoky sauces.</p>
+      </div>
+      <div class="menu__card reveal">
+        <span class="menu__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="3" y="9" width="18" height="11" rx="1"/><path d="M3 9V7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2"/><path d="M12 6v14"/><path d="M12 6c-1.5-3-6-2.5-4.5 0C8.3 7.5 12 6 12 6Zm0 0c1.5-3 6-2.5 4.5 0C15.7 7.5 12 6 12 6Z"/></svg></span>
+        <h3>Party Combos</h3>
+        <p>Bundled platters built for groups &amp; events.</p>
+      </div>
+    </div>
+
+    <div class="menu__cta reveal">
+      <a href="https://wa.me/918124000050?text=Hi%20999BBQ%20Spot!%20Can%20you%20share%20today%27s%20full%20menu%3F" class="btn btn--whatsapp" target="_blank" rel="noopener">See Today's Full Menu on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why 999BBQ</span>
+      <h2 class="section-title">Why Coimbatore Rides With Us</h2>
+    </div>
+
+    <div class="why__grid">
+      <div class="why__card reveal">
+        <div class="why__icon"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 12c2-2.96 0-7-1-8c0 3.038-1.773 4.741-3 6c-1.226 1.26-2 3.24-2 5a6 6 0 1 0 12 0c0-1.532-1.056-3.94-2-5c-1.786 3-2.791 3-4 2z"/></svg></div>
+        <h3>Fresh, Smoked Daily</h3>
+        <p>Nothing pre-made. Every batch is fired &amp; smoked fresh, the same day it reaches you.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M2 15h11V6H4a2 2 0 0 0-2 2v7Z"/><path d="M13 9h3.5l3.5 3.5V15h-7V9Z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg></div>
+        <h3>Mobile &amp; Convenient</h3>
+        <p>No restaurant, no queue. Our BBQ taxi rolls straight into your neighborhood.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M15.5 3.5c-2-1-4.6-.6-6.1.9-1.8 1.8-2 4.6-1.7 6.1-1.6 1.1-3.9 3.1-4.9 5.1-.8 1.6.9 3.3 2.5 2.5 2-1 4-3.3 5.1-4.9 1.5.3 4.3.1 6.1-1.7 1.5-1.5 1.9-4.1.9-6.1a3.6 3.6 0 0 0-1.9-1.9Z"/><circle cx="5.2" cy="18.8" r="1.4"/></svg></div>
+        <h3>Premium Ingredients</h3>
+        <p>Quality meats, fresh produce &amp; house-blended spice rubs — every single time.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M4 20 14 10"/><path d="M14 4l1.5 1.5"/><path d="M18 8l1.5 1.5"/><path d="M16 3l.7 2.3L19 6l-2.3.7L16 9l-.7-2.3L13 6l2.3-.7Z"/><circle cx="6" cy="17" r="1" fill="currentColor" stroke="none"/><circle cx="9" cy="20" r="1" fill="currentColor" stroke="none"/><circle cx="3" cy="14" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Event-Ready</h3>
+        <p>From dine-ins to full-blown parties, we scale up for any celebration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Easy As 1-2-3</span>
+      <h2 class="section-title">Book The BBQ Taxi</h2>
+    </div>
+
+    <div class="how__grid">
+      <div class="how__step reveal">
+        <div class="how__num">01</div>
+        <h3>Message Us</h3>
+        <p>Ping us on WhatsApp or call with your location, date, or event details.</p>
+      </div>
+      <div class="how__step reveal">
+        <div class="how__num">02</div>
+        <h3>We Roll In</h3>
+        <p>Our BBQ taxi arrives at your spot, grill fired up and smoking hot.</p>
+      </div>
+      <div class="how__step reveal">
+        <div class="how__num">03</div>
+        <h3>Fresh Off The Grill</h3>
+        <p>Hot, smoky, straight-off-the-flame BBQ — served right in front of you.</p>
+      </div>
+    </div>
+
+    <div class="how__cta reveal">
+      <a href="https://wa.me/918124000050?text=Hi%20999BBQ%20Spot!%20I%27d%20like%20to%20book%20the%20BBQ%20taxi." class="btn btn--flame btn--lg" target="_blank" rel="noopener">Book Your Slot Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTS ===== -->
+<section class="events" id="events">
+  <div class="container events__inner">
+    <div class="events__text reveal">
+      <span class="eyebrow">Catering &amp; Events</span>
+      <h2 class="section-title">Bring The Smoke To Your Next Event</h2>
+      <p>Birthday, corporate get-together, wedding sangeet or a street pop-up — 999BBQ rolls in with the grill live and smoking, turning any gathering into a flavor-filled experience.</p>
+
+      <div class="events__tags">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M4 21v-7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7"/><path d="M4 21h16"/><path d="M9 12V8M12 12V8M15 12V8"/><path d="M12 8c-1.2-1.2-.3-2.6 0-3.3.3.7 1.2 2.1 0 3.3Z"/></svg> Birthday &amp; House Parties</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg> Corporate Events</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="24" height="24"><circle cx="9" cy="15" r="4.5"/><circle cx="15" cy="15" r="4.5"/></svg> Weddings &amp; Celebrations</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M2 6h20"/><path d="M4 6l3 6-3 0Z" fill="currentColor" stroke="none"/><path d="M9 6l3 6-3 0Z" fill="currentColor" stroke="none"/><path d="M14 6l3 6-3 0Z" fill="currentColor" stroke="none"/><path d="M19 6l2 6-3 0Z" fill="currentColor" stroke="none"/></svg> Street Pop-ups &amp; Festivals</span>
+      </div>
+
+      <a href="https://wa.me/918124000050?text=Hi%20999BBQ%20Spot!%20I%27d%20like%20to%20enquire%20about%20catering%20for%20an%20event." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">Enquire For Catering</a>
+    </div>
+    <div class="events__art reveal">
+      <div class="events__photo">
+        <img src="assets/img/999bbq-taxi-street.jpg" alt="999BBQ Spot mobile BBQ taxi driving through the city, grill smoking on the roof" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION / CONTACT ===== -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2 class="section-title">Find The BBQ Taxi</h2>
+    </div>
+
+    <div class="location__grid">
+      <div class="location__info reveal">
+        <div class="info__row">
+          <span class="info__ico"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+          <div>
+            <h3>Address</h3>
+            <p>Sathy Rd, near Amman Kovil, Poompogar Nagar,<br>Vinayagapuram, Coimbatore, Tamil Nadu 641035</p>
+          </div>
+        </div>
+        <div class="info__row">
+          <span class="info__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.2 0-2.4-.3-3.4-.8L4 20l1-4.9A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+          <div>
+            <h3>WhatsApp / Call</h3>
+            <p><a href="tel:+918124000050">8124 000 050</a></p>
+          </div>
+        </div>
+        <div class="info__row">
+          <span class="info__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div>
+            <h3>Serving Hours</h3>
+            <p>We ride out every evening — ping us on WhatsApp for today's exact hours &amp; location.</p>
+          </div>
+        </div>
+
+        <div class="location__ctas">
+          <a href="https://wa.me/918124000050" class="btn btn--whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a href="https://share.google/P0Y0Uit1zr4BHkt3N" class="btn btn--outline" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="location__map reveal">
+        <iframe
+          title="999BBQ Spot location map"
+          src="https://www.google.com/maps?q=Sathy%20Rd%2C%20near%20Amman%20Kovil%2C%20Poompogar%20Nagar%2C%20Vinayagapuram%2C%20Coimbatore%2C%20Tamil%20Nadu%20641035&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/img/999bbq-logo.jpg" alt="999BBQ Spot logo" class="footer__logo">
+      <div>
+        <span class="footer__name">999<em>BBQ</em> Spot</span>
+        <p>Taste the journey. Ride the flavor.</p>
+      </div>
+    </div>
+
+    <nav class="footer__links">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#why">Why Us</a>
+      <a href="#events">Events</a>
+      <a href="#location">Location</a>
+    </nav>
+
+    <div class="footer__contact">
+      <a href="tel:+918124000050"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg> 8124 000 050</a>
+      <a href="https://wa.me/918124000050" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.2 0-2.4-.3-3.4-.8L4 20l1-4.9A8.5 8.5 0 1 1 21 11.5Z"/></svg> WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> 999BBQ Spot, Coimbatore. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating buttons -->
+<div class="fab">
+  <a href="https://wa.me/918124000050?text=Hi%20999BBQ%20Spot!%20I%27d%20like%20to%20order." class="fab__btn fab__wa" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+    <svg viewBox="0 0 24 24" class="icon" width="24" height="24"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+  </a>
+  <a href="tel:+918124000050" class="fab__btn fab__call" aria-label="Call 999BBQ Spot">
+    <svg viewBox="0 0 24 24" class="icon" width="24" height="24"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+  </a>
+</div>
+
+<script src="assets/js/main.js?v=3"></script>
+</body>
+</html>
