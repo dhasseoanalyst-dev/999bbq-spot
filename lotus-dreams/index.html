@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lotus Dreams Campaign Update</title>
+<style>
+  :root {
+    --bg: #faf8f4;
+    --surface: #ffffff;
+    --text: #1f1d1a;
+    --muted: #6b665e;
+    --line: #e6e1d8;
+    --accent: #2f6b4f;
+    --accent-soft: #e5f0ea;
+    --warn-soft: #fbf3e2;
+    --warn: #8a5a12;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161513;
+      --surface: #1f1e1b;
+      --text: #f1eee8;
+      --muted: #a8a299;
+      --line: #34322e;
+      --accent: #7cc4a0;
+      --accent-soft: #1f3329;
+      --warn-soft: #33291a;
+      --warn: #e2b46a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161513;
+    --surface: #1f1e1b;
+    --text: #f1eee8;
+    --muted: #a8a299;
+    --line: #34322e;
+    --accent: #7cc4a0;
+    --accent-soft: #1f3329;
+    --warn-soft: #33291a;
+    --warn: #e2b46a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 8px; }
+  h1 { font-size: clamp(26px, 5vw, 36px); line-height: 1.2; margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 22px; margin: 48px 0 12px; }
+  p { margin: 0 0 14px; }
+  .lead { font-size: 18px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 8px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .stat b { display: block; font-size: 24px; line-height: 1.2; color: var(--accent); }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; color: var(--muted); font-weight: 600; background: var(--bg); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  ul.check { list-style: none; padding: 0; margin: 0 0 14px; }
+  ul.check li { padding: 8px 0 8px 32px; position: relative; border-bottom: 1px solid var(--line); }
+  ul.check li::before {
+    content: ""; position: absolute; left: 0; top: 11px; width: 18px; height: 18px;
+    border: 1.5px solid var(--muted); border-radius: 5px;
+  }
+  ul.check li.done::before { background: var(--accent); border-color: var(--accent); }
+  ul.check li.done::after {
+    content: ""; position: absolute; left: 6px; top: 14px; width: 5px; height: 9px;
+    border: solid var(--surface); border-width: 0 2px 2px 0; transform: rotate(45deg);
+  }
+  .note { background: var(--warn-soft); color: var(--text); border-left: 3px solid var(--warn); border-radius: 8px; padding: 12px 16px; font-size: 15px; margin: 16px 0; }
+  .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+  .phase { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .phase.now { border: 2px solid var(--accent); background: var(--accent-soft); }
+  .phase h3 { margin: 0; font-size: 17px; display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .phase .tag { font-size: 12px; color: var(--accent); font-weight: 700; white-space: nowrap; }
+  .phase .dates { color: var(--muted); font-size: 13px; margin: 2px 0 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .phase ul { margin: 0; padding-left: 18px; font-size: 15px; }
+  .phase li { margin-bottom: 4px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+  @media (max-width: 720px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .timeline { grid-template-columns: 1fr; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header>
+    <p class="eyebrow">Meta Ads campaign update</p>
+    <h1>Lotus Dreams 2BHK, Pappampatti</h1>
+    <p class="meta">Prepared for SMR Constructions · 10 October 2026</p>
+  </header>
+
+  <section>
+    <p class="lead">Your Facebook and Instagram lead campaign for the Lotus Dreams 2BHK went live on 10 October 2026 with a budget of ₹1,000 per day. We expect the first leads within 1–3 days and a steady flow of about 20–35 leads per week from the second week.</p>
+    <p>The first 7 days are a learning period. Meta is finding the right buyers, so cost per lead will be higher at the start and come down after that.</p>
+
+    <div class="stats">
+      <div class="stat"><b>₹1,000</b><span>Daily budget</span></div>
+      <div class="stat"><b>1–3 days</b><span>Until first leads</span></div>
+      <div class="stat"><b>20–35</b><span>Leads per week (from week 2)</span></div>
+      <div class="stat"><b>₹200–400</b><span>Expected cost per lead</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we have set up</h2>
+    <p>The campaign is built to collect phone numbers from serious buyers, not likes or page views.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Item</th><th>What we set</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Goal</td><td>Leads, using an Instant Form inside Facebook and Instagram</td><td>People submit name and phone without leaving the app, so more of them complete it</td></tr>
+          <tr><td>Budget</td><td>₹1,000 per day (about ₹7,000 per week)</td><td>Enough to test both creatives properly</td></tr>
+          <tr><td>Audience</td><td>Everyone living in Coimbatore + 25 km radius</td><td>Meta's housing rules require at least a 24 km radius, so we cover the full city</td></tr>
+          <tr><td>Ads</td><td>2 creatives, with Tamil and English text</td><td>Meta shows each person the version most likely to work for them</td></tr>
+          <tr><td>Main message</td><td>2BHK at ₹45L, ₹3L down payment + bank loan, tenant arranged by us</td><td>The investment angle stands out from normal "house for sale" ads</td></tr>
+          <tr><td>Lead form</td><td>Name, phone + 4 questions: buying purpose, down payment available, bank loan needed, current location</td><td>Lets us tell hot buyers from casual enquiries before calling</td></tr>
+          <tr><td>Quality filter</td><td>Phone number verified by OTP</td><td>Removes fake and wrong numbers</td></tr>
+          <tr><td>Lead delivery</td><td>Instant alert in the Privyr app + automatic copy to a shared Google Sheet</td><td>Call within minutes, and track every lead in one place</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Current status</h2>
+    <p>As of 10 October 2026, the campaign is set up and submitted. It is in Meta's review or the first day of the learning phase.</p>
+    <ul class="check">
+      <li class="done">Campaign, audience and budget set up</li>
+      <li class="done">Both creatives uploaded with Tamil and English text</li>
+      <li class="done">Lead form with qualifying questions published</li>
+      <li class="done">Leads connected to Privyr for instant alerts</li>
+      <li class="done">Lead tracking sheet connected and tested with a test lead</li>
+      <li>Meta ad review (usually 15 minutes to 24 hours)</li>
+      <li>Learning phase, days 1–7: no changes to the ads during this time</li>
+      <li>First review of results on day 4–5</li>
+    </ul>
+    <p>During the learning phase, results move up and down from day to day. That is normal. Editing the ads in this period restarts Meta's learning, so we will hold steady and judge results after the first week.</p>
+  </section>
+
+  <section>
+    <h2>Lead expectations</h2>
+    <p>At ₹1,000 per day, we expect about 20–35 leads per week once the campaign settles, at roughly ₹200–400 per lead.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Period</th><th>Spend</th><th>Expected leads</th><th>Cost per lead</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1 (learning)</td><td>about ₹7,000</td><td>15–25</td><td>₹280–470</td></tr>
+          <tr><td>Week 2 onwards, per week</td><td>about ₹7,000</td><td>20–35</td><td>₹200–350</td></tr>
+          <tr><td>First month total</td><td>about ₹30,000</td><td>80–130</td><td>₹230–380</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">These are typical ranges for Coimbatore real estate on Meta, not a guarantee. Actual numbers depend on the creatives, the season and how quickly leads are followed up.</div>
+    <p>Not every lead is a buyer. As a rough guide, out of every 100 leads, expect about 30–40 genuine conversations and 5–10 site visits. The quality of follow-up decides how many of those become sales.</p>
+    <p><strong>What improves these numbers:</strong></p>
+    <ul>
+      <li>Calling every lead within 15 minutes; after an hour, interest drops sharply</li>
+      <li>Sending photos, location and a walkthrough video on WhatsApp right after the call</li>
+      <li>Telling us which leads were good or junk, so we can tune the targeting</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How leads reach you</h2>
+    <p>Every form submission is saved in three places, so no lead is lost.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Where</th><th>When</th><th>Use it for</th></tr></thead>
+        <tbody>
+          <tr><td>Privyr app</td><td>Instantly, with a phone notification</td><td>Calling the lead within 15 minutes</td></tr>
+          <tr><td>Google Sheet: "Lotus Dreams – Meta Leads"</td><td>Added automatically, within about 2 hours</td><td>Tracking every lead and its call outcome; shared with you by email</td></tr>
+          <tr><td>Meta Leads Center</td><td>Instantly</td><td>Backup; downloadable for 90 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Each row in the sheet shows the lead date, name, phone, and their answers on buying purpose, down payment, bank loan and location. Your team fills in the last three columns after calling:</p>
+    <ul>
+      <li><strong>Call Status:</strong> New, Called – no answer, Interested, Site visit booked, Not interested, or Junk</li>
+      <li><strong>Called By:</strong> who made the call</li>
+      <li><strong>Notes:</strong> anything useful, such as budget, preferred visit date or objections</li>
+    </ul>
+    <p>We use these updates to see which ads bring real buyers, and adjust the campaign each week.</p>
+  </section>
+
+  <section>
+    <h2>Timeline and next steps</h2>
+    <p>We review results on day 7 and day 14 and send you a short report each week, covering spend, leads, cost per lead, and which ad is working best.</p>
+    <div class="timeline">
+      <div class="phase now">
+        <h3>Week 1: Learning <span class="tag">We are here</span></h3>
+        <p class="dates">10 to 16 October</p>
+        <ul>
+          <li>Meta reviews and learns</li>
+          <li>No changes to the ads</li>
+          <li>Call every lead fast</li>
+          <li>Day 4–5: first check</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <h3>Week 2: Optimise</h3>
+        <p class="dates">17 to 23 October · Day 7 review</p>
+        <ul>
+          <li>Keep the better creative</li>
+          <li>Add an NRI ad set (Gulf, Singapore)</li>
+          <li>Budget review with you</li>
+          <li>First weekly report</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <h3>Week 3 onwards: Scale</h3>
+        <p class="dates">From 24 October · Day 14 review</p>
+        <ul>
+          <li>Retarget people who showed interest but did not submit</li>
+          <li>Fresh creative from the site</li>
+          <li>Increase budget if lead quality is good</li>
+          <li>Weekly lead report</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we need from you</h2>
+    <p>These items will improve lead quality and keep the ads compliant with Meta and RERA rules.</p>
+    <ul class="check">
+      <li>TNRERA registration number for the project, to show in the ads and form</li>
+      <li>Terms of the tenant offer: how long you will find tenants, and what happens if a house stays empty</li>
+      <li>Expected monthly rent for the 2BHK, so we can show investors the return</li>
+      <li>Number of units still available</li>
+      <li>Nearby landmarks and travel times: main road, schools, colleges, IT parks, airport</li>
+      <li>Name of the person who will call leads, with Privyr installed on their phone</li>
+      <li>Update Call Status, Called By and Notes in the lead sheet after every call</li>
+      <li>More photos or videos (finished interiors, amenities, a site walkthrough) for a fresh creative in week 3</li>
+    </ul>
+  </section>
+
+  <footer>Lotus Dreams · Meta Ads campaign update · 10 October 2026</footer>
+</main>
+</body>
+</html>
